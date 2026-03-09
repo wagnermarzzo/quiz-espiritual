@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Descubra se Ele Vai Voltar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Landing Page -->
+  <section id="landing">
+    <div class="container">
+      <h1>Descubra se Ele Vai Voltar</h1>
+      <p>Responda 5 perguntas rápidas e receba uma análise espiritual imediata.<br>
+      Nem todo afastamento significa o fim. Muitos relacionamentos ainda possuem sentimentos ativos, mas enfrentam bloqueios emocionais, orgulho ou falta de comunicação.</p>
+      <button id="startQuizBtn">Iniciar Quiz</button>
+    </div>
+  </section>
+
+  <!-- Quiz Page -->
+  <section id="quiz" class="hidden">
+    <div class="container">
+      <h2>Responda as perguntas</h2>
+      <form id="quizForm">
+        <div class="question">
+          <label>1. Quanto tempo vocês estão afastados?</label>
+          <select required name="q1">
+            <option value="">Selecione</option>
+            <option value="1">Menos de 1 semana</option>
+            <option value="2">1 a 4 semanas</option>
+            <option value="3">Mais de 1 mês</option>
+          </select>
+        </div>
+        <div class="question">
+          <label>2. Qual foi o motivo principal da separação?</label>
+          <select required name="q2">
+            <option value="">Selecione</option>
+            <option value="1">Discussões</option>
+            <option value="2">Traição</option>
+            <option value="3">Distância emocional</option>
+            <option value="2">Outro</option>
+          </select>
+        </div>
+        <div class="question">
+          <label>3. Você já tentou se reconciliar?</label>
+          <select required name="q3">
+            <option value="">Selecione</option>
+            <option value="1">Sim, muitas vezes</option>
+            <option value="2">Sim, algumas vezes</option>
+            <option value="3">Não</option>
+          </select>
+        </div>
+        <div class="question">
+          <label>4. Há presença de outra pessoa envolvida?</label>
+          <select required name="q4">
+            <option value="">Selecione</option>
+            <option value="3">Sim</option>
+            <option value="1">Não</option>
+            <option value="2">Não sei</option>
+          </select>
+        </div>
+        <div class="question">
+          <label>5. Como você percebe a conexão emocional entre vocês?</label>
+          <select required name="q5">
+            <option value="">Selecione</option>
+            <option value="1">Muito forte</option>
+            <option value="2">Moderada</option>
+            <option value="3">Fraca</option>
+          </select>
+        </div>
+        <button type="submit">Ver Resultado</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Results Page -->
+  <section id="results" class="hidden">
+    <div class="container">
+      <h2>Resultado da Sua Análise</h2>
+      <p id="resultText"></p>
+      <button id="offerBtn">Quero a Leitura Espiritual Completa</button>
+      <button id="upsellBtn" class="hidden">Oferta de Análise Profunda</button>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+  </html>
